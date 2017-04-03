@@ -14,7 +14,8 @@ const conn = ftp.create({
 });
 
 gulp.task('cleanremote', (cb) => {
-  return conn.rmdir('/site/wwwroot/**', function(err) {
+  const remotepath = '/site/wwwroot/';
+  return conn.rmdir('remotepath/**', function(err) {
       cb();
   });
 });

@@ -15,8 +15,9 @@ const conn = ftp.create({
 
 gulp.task('deploy', ['cleanremote'], () => {
   const globs = ['./dist/**/*.*'];
+  const remotepath = '/site/wwwroot/';
   return gulp.src(globs, {
     buffer: false,
   })
-      .pipe(conn.dest('/site/wwwroot/'));
+      .pipe(conn.dest(remotepath));
 });
