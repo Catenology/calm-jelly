@@ -18,5 +18,5 @@ gulp.task('deploy', ['cleanremote'], () => {
   return gulp.src(globs, {
     buffer: false,
   })
-      .pipe(conn.dest('/'));
+      .pipe(conn.dest('/site/wwwroot/'));
 });
