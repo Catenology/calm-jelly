@@ -1,0 +1,28 @@
+<header class="nav" role="banner">
+  <div class="container">
+    <a class="avatar" href="{{ "/" | relative_url}}">
+      <img src="{{ site.url }}/assets/images/avatar.jpg" alt="{{ site.title }}" />
+    </a>
+    <div class="intro">
+      {% if site.title %}
+      <a href="{{ "/" | relative_url}}"><h1 class="intro-title">{{ site.title }}</h1></a>
+      {% endif %}
+      {% if site.description %}
+      <p>{{ site.description }}</p>
+      {% endif %}
+    </div>
+    <ul class="social">
+      <li><a href="{{ site.linkedin }}"><span class="cj cj-linkedin"></span></a></li>
+      <li><a href="mailto:{{ site.email }}"><span class="cj cj-mail"></span></a></li>
+    </ul>
+    <ul class="nav-menu">
+      {% assign pages = site.pages | sort: "weight" %}
+      {% for page in pages %}
+      <li><a href="{{ page.url }}">{{ page.title }}</a></li>
+      {% endfor %}
+    </ul>
+    <div class="copyright">
+      <p>© 2017 {{ site.title }}</p>
+    </div>
+  </div>
+</header>

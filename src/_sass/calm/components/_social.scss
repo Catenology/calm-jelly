@@ -1,0 +1,9 @@
+.social {
+  li {
+    display: inline-block;
+    font-size: 2rem;
+    &:not(:first-child) {
+      margin-left: 1rem;
+    }
+  }
+}
