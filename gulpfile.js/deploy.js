@@ -5,18 +5,18 @@ const util = require('gulp-util');
 const ftp = require('vinyl-ftp');
 const minimist = require('minimist');
 
-const deployargs = minimist(process.argv.slice(2));
+const args = minimist(process.argv.slice(2));
 const conn = ftp.create({
-  host: deployargs.host,
-  user: deployargs.user,
-  password: deployargs.password,
+  host: args.host,
+  user: args.user,
+  password: args.password,
   log: util.log,
 });
+const remotepath = 'site/wwwroot';
 
-gulp.task('deploy', ['cleanremote'], () => {
+gulp.task('deploy', () => {
     const globs = ['./dist/**/*.*'];
-    const remotepath = 'site/wwwroot';
     return gulp.src(globs, {buffer: false})
     .pipe(conn.newer(remotepath))
-    .pipe(conn.dest(remotepath));
+    .pipe(conn.dest(args));
 });
