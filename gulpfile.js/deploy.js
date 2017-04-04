@@ -14,13 +14,13 @@ const conn = ftp.create({
 });
 const remotepath = 'site/wwwroot';
 
-gulp.task('cleanremote', () => {
-  return conn.rmdir(remotepath, ()=>{
-    console.log('Deleted files on ftp');
-  });
+gulp.task('cleanremote', (cb) => {
+    return conn.rmdir(remotepath, function(err) {
+        cb();
+    });
 });
 
-gulp.task('deploy', ['cleanremote'], () => {
+gulp.task('deploy', () => {
     const globs = ['./dist/**/*.*'];
     return gulp.src(globs, {buffer: false})
     .pipe(conn.newer(remotepath))
