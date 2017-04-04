@@ -1,0 +1,13 @@
+.resume {
+  ul {
+    li {
+      clear:left;
+    }
+  }
+  h2 {
+    @include font($font-size-default * 1.5);
+  }
+  h3 {
+    @include font($font-size-default);
+  }
+}
