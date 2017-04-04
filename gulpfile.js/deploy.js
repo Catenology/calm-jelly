@@ -14,9 +14,15 @@ const conn = ftp.create({
 });
 const remotepath = 'site/wwwroot';
 
-gulp.task('deploy', () => {
+gulp.task('cleanremote', () => {
+  return conn.rmdir(remotepath, ()=>{
+    console.log('Deleted files on ftp');
+  });
+});
+
+gulp.task('deploy', ['cleanremote'], () => {
     const globs = ['./dist/**/*.*'];
     return gulp.src(globs, {buffer: false})
     .pipe(conn.newer(remotepath))
-    .pipe(conn.dest(args));
+    .pipe(conn.dest(remotepath));
 });
