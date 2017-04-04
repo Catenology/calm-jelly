@@ -16,13 +16,10 @@
       <li><a href="mailto:{{ site.email }}"><span class="cj cj-mail"></span></a></li>
     </ul>
     <ul class="nav-menu">
-      {% assign pages = site.pages | sort: "weight" %}
+      {% assign pages = site.pages | where: "category","main" | sort: "weight" %}
       {% for page in pages %}
       <li><a href="{{ page.url }}">{{ page.title }}</a></li>
       {% endfor %}
     </ul>
-    <div class="copyright">
-      <p>© 2017 {{ site.title }}</p>
-    </div>
   </div>
 </header>

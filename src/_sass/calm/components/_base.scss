@@ -36,29 +36,8 @@ p {
     margin: 0;
 }
 
-ul {
-    list-style: none;
-    padding: 0;
-}
-
 .wrapper {
     width: 100%;
     height: 100%;
     overflow: hidden;
-}
-
-@media screen and (min-width: $breakpoint-md) {
-  .wrapper {
-    display: table;
-    min-height: 100vh;
-  }
-  .nav, .main {
-    display: table-cell;
-  }
-  .nav {
-    width: 30%;
-  }
-  .main {
-    width: 70%;
-  }
 }

@@ -1,5 +1,8 @@
 .nav-menu {
   li {
     display: inline-block;
+    &:not(:first-child) {
+      margin-left: 1rem;
+    }
   }
 }
