@@ -28,7 +28,7 @@ a {
 
     &:focus &.active,
     &:hover {
-        color: $color-sky;
+        color: lighten($color-navy, 20%);
     }
 }
 

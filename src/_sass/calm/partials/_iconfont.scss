@@ -1,10 +1,10 @@
 @font-face {
   font-family: "CalmJelly";
-  src: url('fonts/CalmJelly.eot?v=1.0.1491287900');
+  src: url('fonts/CalmJelly.eot?v=1.0.1491372954');
   src: url('fonts/CalmJelly.eot?#iefix') format('eot'),
-    url('fonts/CalmJelly.woff?v=1.0.1491287900') format('woff'),
-    url('fonts/CalmJelly.ttf?v=1.0.1491287900') format('truetype'),
-    url('fonts/CalmJelly.svg#CalmJelly?v=1.0.1491287900') format('svg');
+    url('fonts/CalmJelly.woff?v=1.0.1491372954') format('woff'),
+    url('fonts/CalmJelly.ttf?v=1.0.1491372954') format('truetype'),
+    url('fonts/CalmJelly.svg#CalmJelly?v=1.0.1491372954') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -160,5 +160,25 @@
 
 .cj-heart:before {
 	content: "\E01D";
+}
+
+.cj-heart-outline:before {
+	content: "\E01E";
+}
+
+.cj-puzzle:before {
+	content: "\E01F";
+}
+
+.cj-design:before {
+	content: "\E020";
+}
+
+.cj-research:before {
+	content: "\E021";
+}
+
+.cj-code:before {
+	content: "\E022";
 }
 
