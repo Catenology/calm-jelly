@@ -10,6 +10,7 @@
     }
     figure {
       position: relative;
+      margin: 0;
       &:after {
         display: block;
         content: '';
@@ -28,9 +29,14 @@
         opacity: .2;
       }
     }
+
+    figcaption {
+      margin-bottom: 2rem;
+    }
+
     @media screen and (min-width: $breakpoint-md) {
       display: inline-block;
-      height: 20rem;
+      height: 24rem;
       overflow: hidden;
       width: 33.3%;
       padding: .5rem;
