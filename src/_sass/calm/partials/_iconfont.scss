@@ -1,10 +1,10 @@
 @font-face {
   font-family: "CalmJelly";
-  src: url('fonts/CalmJelly.eot?v=1.0.1491406214');
+  src: url('fonts/CalmJelly.eot?v=1.0.1491420762');
   src: url('fonts/CalmJelly.eot?#iefix') format('eot'),
-    url('fonts/CalmJelly.woff?v=1.0.1491406214') format('woff'),
-    url('fonts/CalmJelly.ttf?v=1.0.1491406214') format('truetype'),
-    url('fonts/CalmJelly.svg#CalmJelly?v=1.0.1491406214') format('svg');
+    url('fonts/CalmJelly.woff?v=1.0.1491420762') format('woff'),
+    url('fonts/CalmJelly.ttf?v=1.0.1491420762') format('truetype'),
+    url('fonts/CalmJelly.svg#CalmJelly?v=1.0.1491420762') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -180,5 +180,17 @@
 
 .cj-code:before {
 	content: "\E022";
+}
+
+.cj-analyze:before {
+	content: "\E023";
+}
+
+.cj-iteration:before {
+	content: "\E024";
+}
+
+.cj-handshake:before {
+	content: "\E025";
 }
 
