@@ -5,10 +5,11 @@ It's just a randomized name.
 # How to use
 
 1. `git clone xxxxx`
-2. `npm install`
-3. If you're on Windows, install Ruby
-4. `gem install jekyll`
-3. `gulp watch`
+2. Install platformio
+3. `npm install`
+4. If you're on Windows, install Ruby
+5. `gem install jekyll`
+6. `gulp watch`
 
 # How to update
 
