@@ -20,7 +20,7 @@ gulp.task('cleanremote', (cb) => {
     });
 });
 
-gulp.task('deploy', () => {
+gulp.task('deploy',['cleanremote'], () => {
     const globs = ['./dist/**/*.*'];
     return gulp.src(globs, {buffer: false})
     .pipe(conn.dest(remotepath));
