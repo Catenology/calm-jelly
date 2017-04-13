@@ -11,10 +11,6 @@
       <p>{{ site.description }}</p>
       {% endif %}
     </div>
-    <ul class="social">
-      <li><a href="{{ site.linkedin }}"><span class="cj cj-linkedin"></span></a></li>
-      <li><a href="mailto:{{ site.email }}"><span class="cj cj-mail"></span></a></li>
-    </ul>
     <ul class="nav-menu">
       {% assign pages = site.pages | where: "category","main" | sort: "weight" %}
       {% for page in pages %}

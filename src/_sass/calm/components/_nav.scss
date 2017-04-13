@@ -2,8 +2,8 @@
   background: $color-black;
   color: $color-white;
   overflow: hidden;
-  padding: 2rem 0;
   text-align: center;
+  padding: 2rem 0;
   a {
     &,
     &:visited {
@@ -14,11 +14,6 @@
     &.active {
       color: $color-white;
     }
-  }
-  ul {
-      list-style: none;
-      padding: 0;
-      margin: 0;
   }
 }
 

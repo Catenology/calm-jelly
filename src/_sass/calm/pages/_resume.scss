@@ -18,12 +18,4 @@
     margin-top: 0;
     margin-bottom: 2rem;
   }
-
-  h2 {
-    @include font($font-size-default * 1.5);
-  }
-
-  h3 {
-    @include font($font-size-default);
-  }
 }
